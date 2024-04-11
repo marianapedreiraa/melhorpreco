@@ -1,4 +1,4 @@
-var cacheName = 'pwadedoduro+-v2.0';
+var cacheName = 'pwademelhorpreco';
 
 self.addEventListener('install', event => {
 
