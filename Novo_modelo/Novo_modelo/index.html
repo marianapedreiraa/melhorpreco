@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dedo Duro App</title>
+  
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assents/img/AppImages/114.png">
+
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+     
+      <div class="text-center">
+        <h1>Bem-vindo ao Dedo Duro</h1>
+        <p>Nesse aplicativo, você pode tirar fotos de infrações de trânsito e encaminhar 
+            direatamente para a central de fiscalização.</p>
+        <a href="#" class="custom-button">Clique Aqui</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let newWorker;
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then(reg => {
+        reg.addEventListener('updatefound', () => {
+          newWorker = reg.installing;
+        });
+      });
+      let refreshing;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing) return;
+        window.location.reload();
+        refreshing = true;
+      });
+    }
+  </script>
+
+</body>
+</html>
