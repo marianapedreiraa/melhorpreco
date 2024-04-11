@@ -1,11 +1,11 @@
 {
-  "name": "DedoDuroapp2.0",
-  "short_name": "DedoDedo",
+  "name": "melhorepreco",
+  "short_name": "melhorpreco",
   "theme_color": "#0065b4",
   "background_color": "#ffffff",
   "orientation": "any",
   "display": "fullscreen",
-  "start_url": "https://dedoduroapp2.netlify.app",
+  "start_url": "https://melhorpreco.netlify.app",
   "icons": [
       
       {
