@@ -1,1 +1,1 @@
-Novo modelo do aplicativo DedoDuro
+Novo modelo do aplicativo melhorpreco
